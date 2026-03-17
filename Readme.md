@@ -65,7 +65,7 @@ Replace with new node
 ↓
 Reschedule pods
 
-Resume Points – EKS Cluster Upgrade
+**Resume Points – EKS Cluster Upgrade**
 Planned and executed AWS EKS cluster version upgrades while minimizing downtime for production workloads.
 Managed node group upgrades using Terraform, ensuring worker nodes remained compatible with upgraded cluster versions.
 Implemented default EKS addons (CoreDNS, kube-proxy, VPC CNI, EBS CSI driver, pod identity) with automated upgrade paths using Terraform.
@@ -74,7 +74,11 @@ Leveraged Terraform variables and version control to dynamically manage cluster,
 Ensured zero-impact upgrades by using rolling node updates, maintaining service availability during cluster version changes.
 Automated cluster and addon upgrades using Terraform best practices, including force_update_version and version pinning when needed.
 Monitored and validated post-upgrade cluster health, addon readiness, and application stability using AWS console and kubectl.
-Interview Explanation
+
+
+
+
+**Interview Explanation**
 "I have experience performing EKS cluster upgrades through multiple approaches. Manually, I've used the AWS console to upgrade the control plane and worker nodes while monitoring system components to ensure stability and zero downtime. Using the AWS CLI, I scripted cluster and node upgrades, validating addon and pod health to maintain operational reliability. With Terraform, I automated the entire upgrade process, managing cluster versions, node groups, and default addons like CoreDNS, kube-proxy, VPC CNI, and EBS CSI sequentially to avoid throttling. I also implemented best practices such as version pinning for critical addons, rolling updates for node groups, and health checks for system pods, ensuring upgrades are predictable and low-risk. By combining automation, monitoring, and sequential deployment, I was able to minimize downtime, maintain application availability, and deliver a fully auditable, repeatable process across multiple environments. This approach also improved team efficiency, reduced manual intervention, and allowed seamless scaling of the infrastructure."
 
 
